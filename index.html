@@ -6,8 +6,24 @@
 
   </head>
   <body>
+    <header>
+      <div>
+        <button>left</button>
+        <button>right</button>
+      </div>
+    </header>
+
     <h1>💖 Hello World!</h1>
     <p>Welcome to your Electron application.</p>
+
+    <button id="open-dialog">show dialog</button>
+
+    <dialog>
+      <h1>Dialog</h1>
+      <p>Here is a dialog element</p>
+      <button id="close-dialog">close</button>
+    </dialog>
+
     <script type="module" src="/src/renderer.ts"></script>
   </body>
 </html>

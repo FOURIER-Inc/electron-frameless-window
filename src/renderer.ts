@@ -29,3 +29,18 @@
 import './index.css';
 
 console.log('👋 This message is being logged by "renderer.ts", included via Vite');
+
+// dialog
+// copied from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
+
+const dialog = document.querySelector("dialog");
+const showButton = document.querySelector("#open-dialog");
+const closeButton = document.querySelector("#close-dialog");
+
+showButton.addEventListener("click", () => {
+  dialog.showModal();
+});
+
+closeButton.addEventListener("click", () => {
+  dialog.close();
+});
